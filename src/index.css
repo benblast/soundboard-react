@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+
+  letter-spacing: 0.8px;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.main {
+  display: grid;
+  background-color: #262c2e;
+  height: 100vh;
+  width: 100%;
+  color: #eee;
+  overflow: scroll;
+}
+
+.logo-image {
+  height: 7rem;
+  position: absolute;
+  right: 1rem;
+  top: -1rem;
+}
+
+.title {
+  position: flex;
+  justify-content: start;
+  padding: 3rem 0 0 8rem;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.square-container {
+  padding: 1rem;
+  margin: 5rem;
+  background-color: #1e2325;
+  justify-content: center;
+  align-self: center;
+  /* border-radius: 0.2rem; */
+}
+
+.grid {
+  display: grid;
+  background-color: #3c4143;
+}
+
+.grid-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  background-color: #1e2325;
+  color: #eee;
+  height: 10rem;
+  padding: 0.5rem;
+  transition: all 0.2s;
+  font-size: 2.5rem;
+  /* border-radius: 0.2rem; */
+}
+
+.grid-column-3 {
+  /* font-size: 1.5rem; */
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  box-shadow: 15px 20px 30px 0 rgba(0, 0, 0, 0.11);
+  /* border-radius: 0.2rem; */
+  padding: 1.5rem;
+}
+
+@media (max-width: 430px) {
+  .square-container {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+  }
+
+  .grid-column-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title {
+    display: flex;
+    font-size: 6.5vw;
+    justify-content: flex-start;
+    padding: 2rem 0 1rem 1rem;
+  }
+
+  .grid-square {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .grid-column-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .square-container {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+  }
+
+  .grid-square {
+    width: 340px;
+    height: 15vh; /* Smaller height for grid items */
+    margin: 1%; /* Reduce margin */
+    font-size: 2.5rem;
+  }
+}
+
+.grid-square:hover {
+  background-color: #2e3335;
+}
+
+.grid-square.playing {
+  background-color: #44494b;
+}
+
+.timer {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
