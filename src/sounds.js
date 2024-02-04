@@ -68,10 +68,6 @@ export const sounds = [
     "sound": "/sounds/Hagga_hagga_Yagga.ogg"
   },
   {
-    "text": "I already Did",
-    "sound": "/sounds/I_already_Did.ogg"
-  },
-  {
     "text": "I am Cocksucker",
     "sound": "/sounds/I_am_Cocksucker.ogg"
   },
@@ -218,29 +214,5 @@ export const sounds = [
   {
     "text": "Wut u say Bro",
     "sound": "/sounds/Wut_u_say_Bro.ogg"
-  },
-  {
-    "text": "horse",
-    "sound": "/sounds/horse.ogg"
-  },
-  {
-    "text": "i already did",
-    "sound": "/sounds/i already did.ogg"
-  },
-  {
-    "text": "mmmmmmmm",
-    "sound": "/sounds/mmmmmmmm.ogg"
-  },
-  {
-    "text": "president",
-    "sound": "/sounds/president.ogg"
-  },
-  {
-    "text": "rocky",
-    "sound": "/sounds/rocky.ogg"
-  },
-  {
-    "text": "wordy bastard",
-    "sound": "/sounds/wordy bastard.ogg"
   }
 ];
